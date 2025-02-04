@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        table {
+            width: 100vw;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+        
+        .box1 {
+            background-color: aqua;
+            border: 2px solid black;
+            text-align: center;
+            width: 50%;
+        }
+        
+        .box2 {
+            background-color: orange;
+            border: 2px solid black;
+            text-align: center;
+            width: 50%;
+        }
+        
+        h1 {
+            font-size: 4vw;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="box1">
+                <h1>Left Side</h1>
+            </td>
+            <td class="box2">
+                <h1>Right Side</h1>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
