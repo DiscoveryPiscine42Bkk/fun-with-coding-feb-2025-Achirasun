@@ -1,0 +1,17 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://i.pinimg.com/originals/00/d0/12/00d01235a54cc123abc4b3a603ea9376.gif');
+    background-size: cover;
+}
+
+div{
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 25%;
+    border-radius: 3px;
+}
