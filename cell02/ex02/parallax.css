@@ -1,0 +1,47 @@
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+.parallax {
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.parallax1 {
+    background-image: url("https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    color: white;
+}
+
+.parallax2 {
+    background-image: url("https://media1.tenor.com/m/Y7NDSBdTwoMAAAAd/league-of-legend-yasuo.gif");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.warning {
+    height: 60%;
+    background-color: black;
+    color: red;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+}
+
+h1 {
+    margin: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
