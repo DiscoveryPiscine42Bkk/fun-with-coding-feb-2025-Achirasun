@@ -39,7 +39,7 @@ function addTodoToDOM(todoText) {
 function saveTodos() {
   const todos = [];
   document.querySelectorAll('.todo-item').forEach(item => {
-    todos.push(item.textContent);
+    todos.unshift(item.textContent);
   });
   setCookie('todos', JSON.stringify(todos), 7);  // Save for 7 days
 }
