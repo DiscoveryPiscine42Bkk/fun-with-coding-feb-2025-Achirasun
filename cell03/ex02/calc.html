@@ -62,6 +62,7 @@
             // แจ้งเตือน inputs
             if (!/^\d+$/.test(leftOperand) || !/^\d+$/.test(rightOperand)) {
                 alert('Error :(');
+                console.log('Error: Invalid inputs');
                 return;
             }
 
@@ -72,6 +73,7 @@
             // หาก หาร และ mod ด้วย 0
             if ((operator === '/' || operator === '%') && num2 === 0) {
                 alert('It’s over 9000!');
+                console.log('Error: Division or modulus by zero');
                 return;
             }
 
@@ -97,6 +99,7 @@
             }
 
             alert(`Result: ${result}`);
+            console.log(`Result: ${result}`);
         }
 
         setInterval(() => {

@@ -55,23 +55,25 @@
     <script>
         $(document).ready(function() {
             $('#calculateBtn').on('click', function() {
-                const leftOperand = $('#leftOperand').val(); // รับตัวซ้าย
-                const rightOperand = $('#rightOperand').val(); // รับตัวขวา
-                const operator = $('#operator').val(); // รับ operator
+                const leftOperand = $('#leftOperand').val(); // Get left operand
+                const rightOperand = $('#rightOperand').val(); // Get right operand
+                const operator = $('#operator').val(); // Get operator
 
-                // แจ้งเตือน inputs
+                // Validate inputs: Only numbers allowed
                 if (!/^\d+$/.test(leftOperand) || !/^\d+$/.test(rightOperand)) {
+                    console.log('Error: Invalid inputs');
                     alert('Error :(');
                     return;
                 }
 
-                // เปลี่ยน string เป็น int ในฐานสิบ
+                // Convert string to integer
                 const num1 = parseInt(leftOperand, 10);
                 const num2 = parseInt(rightOperand, 10);
 
-                // หาก หาร และ mod ด้วย 0
+                // Handle division by zero and modulus by zero
                 if ((operator === '/' || operator === '%') && num2 === 0) {
                     alert('It’s over 9000!');
+                    console.log('Error: Division or modulus by zero');
                     return;
                 }
 
@@ -96,9 +98,12 @@
                         result = 'Invalid operator';
                 }
 
+                // Show result in alert and console log
                 alert(`Result: ${result}`);
+                console.log(`Result: ${result}`);
             });
 
+            // Alert every 30 seconds
             setInterval(() => {
                 alert('Please, use me...');
             }, 30000);
