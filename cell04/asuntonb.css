@@ -239,6 +239,25 @@ h2 {
     margin-bottom: 20px;
 }
 
+.portfolio-image {
+    width: 70%;
+    height: 350px;
+    background-color: #666;
+    border-radius: 15px;
+    margin:auto;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.portfolio-image img{
+    width: 100%;
+    height: 350px;
+    background-color: #666;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
 /* ---------- SOCIAL-MEDIA SECTION ---------- */
 
 .social-media-buttons {
